@@ -21,4 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Install dependencies
+      run: lein deps
+    - name: Deploylein
       run: lein deploy clojars
